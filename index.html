@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--=============== FAVICON ===============-->
+	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+	<!--=============== REMIXICONS ===============-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+	<!--=============== SWIPER CSS ===============-->
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+	<!--=============== CSS ===============-->
+	<link rel="stylesheet" href="style.css">
+
+	<title>Responsive book website</title>
+</head>
+
+<body>
+	<!--==================== HEADER ====================-->
+	<header class="header" id="header">
+		<nav class="nav container">
+			<a href="#" class="nav__logo">
+				<i class="ri-book-2-line"></i>Bookly
+			</a>
+			<div class="nav__menu">
+				<ul style="margin-right: 380px; display: flex; padding: 5px;" class="nav__list">
+					<li class="nav__item">
+						<a href="#home" class="nav__link active-link">
+							<i class="ri-home-2-line"></i>
+							<span>Home</span>
+						</a>
+					</li>
+
+					<li class="nav__item">
+						<a href="#new" class="nav__link">
+							<i class="ri-book-3-line"></i>
+							<span>Subject Books</span>
+						</a>
+					</li>
+
+					<li class="nav__item">
+						<a href="#discount" class="nav__link">
+							<i class="ri-book-2-line"></i>
+							<span>Community</span>
+						</a>
+					</li>
+
+					<li class="nav__item">
+						<a href="#join" class="nav__link">
+							<i class="ri-chat-3-line"></i>
+							<span>Message</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="nav__actions">
+					<!--search button-->
+					<i class="ri-search-line search-button" id="search-button"></i>
+
+					<!--Login button-->
+					<i class="ri-user-line login-button" id="login-button"></i>
+
+					<!--Theme button-->
+					<i class="ri-moon-line change-theme" id="theme-button"></i>
+
+					<!--Search input-->
+					<input type="text" class="search-input" id="search-input" placeholder="Search...">
+
+					<!--Go icon-->
+					<i class="ri-send-plane-line go-icon" id="go-icon"></i>
+
+				</div>
+				<style>
+			 
+					/* Define your dark mode styles here */
+					body.dark-mode {
+						background-color: rgb(84, 84, 226);
+						color: white;
+					}
+				</style>
+
+				<!-- Result message -->
+				<div id="result-message" style="display: none;">
+					No Result
+				</div>
+
+
+
+		</nav>
+	</header>
+
+	<!--==================== SEARCH ====================-->
+	<div class="search" id="search-content">
+		<form action="" class="search__form">
+			<i class="ri-search-line search__icon"></i>
+			<input type="search" placeholder="Search your subject books here!" class="search__input">
+		</form>
+
+		<i class="ri-close-line search__close" id="search-close"></i>
+	</div>
+
+	<!--==================== LOGIN ====================-->
+	<div class="login grid" id="login-content">
+		<form action="" class="login__form grid">
+			<h3 class="login__title">Hi There!</h3>
+			<p>Thank you for visiting our page. Enjoy your time, and we hope to see you again soon!</p>
+
+			<div>
+				<button type="submit" class="login__button button">Logout</button>
+			</div>
+		</form>
+
+		<i class="ri-close-line login__close" id="login-close"></i>
+	</div>
+
+	<!--==================== DESCRIPTION====================-->
+	<div class="description grid" id="description-content">
+		<form action="" class="description__form grid">
+			<h3 class="description__title">Hi There!</h3>
+			<p>Thank you for visiting our page. Enjoy your time, and we hope to see you again soon!</p>
+
+			<div>
+				<button type="submit" class="description__button button">Description</button>
+			</div>
+		</form>
+
+		<i class="ri-close-line description__close" id="description-close"></i>
+	</div>
+
+
+	<!--==================== MAIN ====================-->
+	<main class="main">
+		<!--==================== HOME ====================-->
+		<section class="home section" id="home">
+			<div class="home__container container grid">
+				<div class="home__data">
+					<h1 class="home__title">
+						Browse & <br>
+						Select Booker
+					</h1>
+
+					<p class="home__description">
+						Welcome to our Library Book Guide, where literary exploration meets digital convenience! Dive
+						into a treasure trove of knowledge as we guide you through the vast of realms og literature.
+					</p>
+
+					<a href="#" class="button">Explore Now</a>
+				</div>
+
+				<div class="home__images">
+					<div class="home__swiper swiper">
+						<div class="swiper-wrapper">
+							<article class="home__article swiper-slide">
+								<img src="assets/images/home-book-1.png" alt="image" class="home__img">
+							</article>
+
+							<article class="home__article swiper-slide">
+								<img src="assets/images/home-book-2.png" alt="image" class="home__img">
+							</article>
+
+							<article class="home__article swiper-slide">
+								<img src="assets/images/home-book-3.png" alt="image" class="home__img">
+							</article>
+
+							<article class="home__article swiper-slide">
+								<img src="assets/images/home-book-4.png" alt="image" class="home__img">
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!--==================== SERVICES ====================-->
+		<section class="services section">
+			<div class="services__container container grid">
+				<article class="services__card">
+					<i class="ri-map-pin-2-line"></i>
+					<h3 class="services__title">Fast</h3>
+					<p class="services__description">Easy to navigate</p>
+				</article>
+
+				<article class="services__card">
+					<i class="ri-group-2-line"></i>
+					<h3 class="services__title">Easy</h3>
+					<p class="services__description">User friendly</p>
+				</article>
+
+				<article class="services__card">
+					<i class="ri-lock-2-line"></i>
+					<h3 class="services__title">Secure</h3>
+					<p class="services__description">Safe account</p>
+				</article>
+			</div>
+		</section>
+
+		<!--==================== FEATURED ====================-->
+		<section class="featured section" id="featured">
+
+		</section>
+
+		<!--==================== SUBJECT BOOKS ====================-->
+		<section class="new section" id="new">
+			<h2 class="section__title" style="display: inline-block;">
+				<div id="GE1" style="display: inline-block;">
+					Subject Books
+				</div>
+			</h2>
+
+			<div class="new__container container">
+				<div class="new__swiper swiper">
+					<div class="swiper-wrapper">
+						<!-- Card 1 -->
+						<a href="#" class="new__card swiper-slide"
+							style="display: inline-block; margin-right: 15px; margin-bottom: 20px;">
+							<img src="assets/images/books1.png" alt="image" class="new__img">
+							<div style="display: inline-block;">
+								<h2 class="new__title">Understanding Self</h2>
+								<div class="new__prices" style="display: inline-block;">
+									<span class="new__discount">GE 1</span>
+								</div>
+								<div class="new__stars" style="display: inline-block;">
+									<i class="ri-arrow-right-line description-button" id="description-button"></i>
+								</div>
+							</div>
+						</a>
+
+						<!-- Card 2 -->
+						<a href="#" class="new__card swiper-slide" style="display: inline-block; margin-right: 15px;">
+							<img src="assets/images/book-2.png" alt="image" class="new__img">
+							<div style="display: inline-block;">
+								<h2 class="new__title">Subject Name</h2>
+								<div class="new__prices" style="display: inline-block;">
+									<span class="new__discount">remove</span>
+									<span class="new__price">remove</span>
+								</div>
+								<div class="new__stars" style="display: inline-block;">
+									<i class="ri-arrow-right-line"></i>
+								</div>
+							</div>
+						</a>
+
+						<!-- Card 3 -->
+						<a href="#" class="new__card swiper-slide" style="display: inline-block; margin-right: 10px;">
+							<img src="assets/images/book-3.png" alt="image" class="new__img">
+							<div style="display: inline-block;">
+								<h2 class="new__title">Another Subject</h2>
+								<div class="new__prices" style="display: inline-block;">
+									<span class="new__discount">remove</span>
+									<span class="new__price">remove</span>
+								</div>
+								<div class="new__stars" style="display: inline-block;">
+									<i class="ri-arrow-right-line"></i>
+								</div>
+							</div>
+						</a>
+
+						<!-- Card 4 -->
+						<a href="#" class="new__card swiper-slide"
+							style="display: inline-block; margin-right: 15px; margin-bottom: 20px;">
+							<img src="assets/images/book-4.png" alt="image" class="new__img">
+							<div style="display: inline-block;">
+								<h2 class="new__title">Yet Another Subject</h2>
+								<div class="new__prices" style="display: inline-block;">
+									<span class="new__discount">remove</span>
+									<span class="new__price">remove</span>
+								</div>
+								<div class="new__stars" style="display: inline-block;">
+									<i class="ri-arrow-right-line"></i>
+								</div>
+							</div>
+						</a>
+
+						<!-- Card 5 -->
+						<a href="#" class="new__card swiper-slide" style="display: inline-block; margin-right: 15px;">
+							<img src="assets/images/book-5.png" alt="image" class="new__img">
+							<div style="display: inline-block;">
+								<h2 class="new__title">Fifth Subject</h2>
+								<div class="new__prices" style="display: inline-block;">
+									<span class="new__discount">remove</span>
+									<span class="new__price">remove</span>
+								</div>
+								<div class="new__stars" style="display: inline-block;">
+									<i class="ri-arrow-right-line"></i>
+								</div>
+							</div>
+						</a>
+
+						<!-- Card 6 -->
+						<a href="#" class="new__card swiper-slide" style="display: inline-block; margin-right: 10px;">
+							<img src="assets/images/book-6.png" alt="image" class="new__img">
+							<div style="display: inline-block;">
+								<h2 class="new__title">Sixth Subject</h2>
+								<div class="new__prices" style="display: inline-block;">
+									<span class="new__discount">remove</span>
+									<span class="new__price">remove</span>
+								</div>
+								<div class="new__stars" style="display: inline-block;">
+									<i class="ri-arrow-right-line"></i>
+								</div>
+							</div>
+						</a>
+
+						<!-- Card 7 -->
+						<a href="#" class="new__card swiper-slide" style="display: inline-block; margin-right: 15px;">
+							<img src="assets/images/book-7.png" alt="image" class="new__img">
+							<div style="display: inline-block;">
+								<h2 class="new__title">Seventh Subject</h2>
+								<div class="new__prices" style="display: inline-block;">
+									<span class="new__discount">remove</span>
+									<span class="new__price">remove</span>
+								</div>
+								<div class="new__stars" style="display: inline-block;">
+									<i class="ri-arrow-right-line"></i>
+								</div>
+							</div>
+						</a>
+
+						<!-- Card 8 -->
+						<a href="#" class="new__card swiper-slide" style="display: inline-block; margin-right: 15px;">
+							<img src="assets/images/book-7.png" alt="image" class="new__img">
+							<div style="display: inline-block;">
+								<h2 class="new__title">Eight Subject</h2>
+								<div class="new__prices" style="display: inline-block;">
+									<span class="new__discount">remove</span>
+									<span class="new__price">remove</span>
+								</div>
+								<div class="new__stars" style="display: inline-block;">
+									<i class="ri-arrow-right-line"></i>
+								</div>
+							</div>
+						</a>
+						<!-- Card 9 -->
+						<a href="#" class="new__card swiper-slide" style="display: inline-block; margin-right: 10px;">
+							<img src="assets/images/book-7.png" alt="image" class="new__img">
+							<div style="display: inline-block;">
+								<h2 class="new__title">Ninth Subject</h2>
+								<div class="new__prices" style="display: inline-block;">
+									<span class="new__discount">remove</span>
+									<span class="new__price">remove</span>
+								</div>
+								<div class="new__stars" style="display: inline-block;">
+									<i class="ri-arrow-right-line"></i>
+								</div>
+							</div>
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<!--==================== DISCOUNT ====================-->
+		<section class="discount section" id="discount">
+			<div class="discount__container container grid">
+				<div class="discount__data">
+					<h2 class="discount__title section__title">Help Our Community</h2>
+
+					<p class="discount__description">
+						"Join us in making a difference! Together, we can create a positive impact in our community.
+						Message us to be a part of the change and inspire others to join the movement. Your support can
+						truly make a difference. Let's build a better community, one message at a time!"
+					</p>
+
+					<a href="#" class="button">Message us</a>
+				</div>
+
+				<div class="discount__image">
+					<img src="assets/images/discount-book-1.png" alt="image" class="discount__img-1">
+					<img src="assets/images/discount-book-2.png" alt="image" class="discount__img-2">
+				</div>
+			</div>
+		</section>
+
+		<!--==================== JOIN ====================-->
+		<section class="join section" id="join">
+			<div class="join__container">
+				<img src="assets/images/join-bg.jpg" alt="image" class="join__bg">
+
+				<div class="join__data container grid">
+					<h2 class="join__title section__title">
+						Subscribe Us <br>
+						For Latest Updates
+					</h2>
+
+					<form action="" class="join__form">
+						<input type="email" placeholder="Enter email" class="join__input">
+						<button type="submit" class="join__button button">Subscribe</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!--==================== TESTIMONIAL ====================-->
+
+		<section class="testimonial section" id="testimonial">
+			<h2 class="section__title">
+				Information
+			</h2>
+
+			<div class="testimonial__container container">
+				<div class="testimonial__swiper swiper">
+					<div style="padding-left: 80px;" class="swiper-wrapper">
+						<article class="testimonial__card swiper-slide">
+							<img src="assets/images/testimonial-perfil-3.png" alt="image" class="testimonial__img">
+							<h2 class="testimonial__title">Name</h2>
+							<p class="testimonial__description">
+								lorem sjdjsndjsjdk idkdkdkdkd ejdiekdjjdk sjdiekdidk sidieidi jfejdjjd jdkekdi
+							</p>
+							<div class="testimonial__stars">
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-half-fill"></i>
+							</div>
+						</article>
+
+						<article class="testimonial__card swiper-slide">
+							<img src="assets/images/testimonial-perfil-4.png" alt="image" class="testimonial__img">
+							<h2 class="testimonial__title">Name</h2>
+							<p class="testimonial__description">
+								lorem sjdjsndjsjdk idkdkdkdkd ejdiekdjjdk sjdiekdidk sidieidi jfejdjjd jdkekdi
+							</p>
+							<div class="testimonial__stars">
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-half-fill"></i>
+							</div>
+						</article>
+
+						<article class="testimonial__card swiper-slide">
+							<img src="assets/images/testimonial-perfil-3.png" alt="image" class="testimonial__img">
+							<h2 class="testimonial__title">Name</h2>
+							<p class="testimonial__description">
+								lorem sjdjsndjsjdk idkdkdkdkd ejdiekdjjdk sjdiekdidk sidieidi jfejdjjd jdkekdi
+							</p>
+							<div class="testimonial__stars">
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-half-fill"></i>
+							</div>
+						</article>
+
+						<article class="testimonial__card swiper-slide">
+							<img src="assets/images/testimonial-perfil-4.png" alt="image" class="testimonial__img">
+							<h2 class="testimonial__title">Name</h2>
+							<p class="testimonial__description">
+								lorem sjdjsndjsjdk idkdkdkdkd ejdiekdjjdk sjdiekdidk sidieidi jfejdjjd jdkekdi
+							</p>
+							<div class="testimonial__stars">
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-fill"></i>
+								<i class="ri-star-half-fill"></i>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!--==================== FOOTER ====================-->
+	<footer class="footer">
+		<div class="footer__container container grid">
+			<div>
+				<a href="#" class="footer__logo">
+					<i class="ri-book-2-line"></i>Bookly
+				</a>
+
+				<p class="footer__description">
+					Find and explore the best <br>
+					Books that you need.
+				</p>
+			</div>
+
+			<div class="footer__data grid">
+				<div>
+					<h3 class="footer__title">Contact</h3>
+
+					<ul class="footer__links">
+						<li>
+							<address class="footer__info">
+								Negros Oriental <br>
+								State University Guihulngan
+							</address>
+						</li>
+
+						<li>
+							<address class="footer__info">
+								Norsugroup398@gmail.com <br>
+								09297793233
+							</address>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<h3 class="footer__title">Social</h3>
+
+					<div class="footer__social">
+						<a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+							<i class="ri-facebook-circle-line"></i>
+						</a>
+
+						<a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+							<i class="ri-instagram-line"></i>
+
+						</a>
+						<a href="https://www.twitter.com/" target="_blank" class="footer__social-link">
+							<i class="ri-twitter-x-line"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<span class="footer__copy">
+			&#169; Copyright @ 2023 designed by CIT group
+		</span>
+	</footer>
+
+	<!--========== SCROLL UP ==========-->
+	<a href="#" class="scrollup" id="scroll-up">
+		<i class="ri-arrow-up-line"></i>
+	</a>
+
+	<!--=============== SCROLLREVEAL ===============-->
+	<script src="assets/js/scrollreveal.min.js"></script>
+
+	<!--=============== SWIPER JS ===============-->
+	<script src="assets/js/swiper-bundle.min.js"></script>
+
+	<!--=============== MAIN JS ===============-->
+	<!-- ako ra ge wala bin kayyy para makita jd iyang UI nka inline ra ang JS ani sa search bar anyways -->
+	<!-- nara ang final bin -->
+	<script src="main.js"></script>
+</body>
+
+</html>
